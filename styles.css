@@ -1,0 +1,24 @@
+/* This will serve as the area for my main brand styles that I want to be. global across my site*/
+/* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+*/
+
+.container {
+	display: flex;
+	justify-content: flex-end;
+	padding: 35px;
+	border-bottom: .25px solid black;
+}
+
+.container > li {
+	width: 10%;
+	display: flex;
+	justify-content: space-around;
+}
+
+
+
+/* This will serve as the area for my mobile breakpoints */
