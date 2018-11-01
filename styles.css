@@ -1,24 +1,47 @@
 /* This will serve as the area for my main brand styles that I want to be. global across my site*/
-/* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-*/
 
+body {
+ 	font-family: 'Raleway', sans-serif;
+}
+
+/* Nav */
 .container {
 	display: flex;
 	justify-content: flex-end;
-	padding: 35px;
-	border-bottom: .25px solid black;
+	padding: 25px;
+	border-bottom: .25px solid yellow;
+	background-color: pink;
 }
 
 .container > li {
-	width: 10%;
+	width: 30%;
 	display: flex;
 	justify-content: space-around;
+	padding: 10px;
+	color: white;
 }
 
+/* Main */
 
+.main-content {
+	/*display: flex;
+	justify-content: center;*/
+}
+
+h1	{
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+	font-size: 20px;
+	font-weight: 600;
+}
 
 /* This will serve as the area for my mobile breakpoints */
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 14px;
+    }
+    .container > li {
+    	font-size: 12px;
+    }
+}
