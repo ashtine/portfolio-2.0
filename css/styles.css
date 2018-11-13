@@ -9,8 +9,8 @@ body {
 	display: flex;
 	justify-content: flex-end;
 	padding: 25px;
-	border-bottom: .25px solid yellow;
-	background-color: pink;
+	border-bottom: .25px solid #eac9aa;
+	background-color: #ec8e75;
 }
 
 .container > li {
@@ -18,29 +18,37 @@ body {
 	display: flex;
 	justify-content: space-around;
 	padding: 10px;
-	color: white;
+	color: #eac9aa;
 }
 
 /* Main */
 
 .main-content {
-	/*display: flex;
-	justify-content: center;*/
-	background-color: yellow;
+/*	display: flex;*/
+	align-items: center;
+	background-color: #82a18f;
+}
+.mini-content
+{
+/*	height: 300px;*/
+	display: flex;
+	justify-content: space-around;
 }
 
 h1	{
-	display: flex;
 	justify-content: center;
 	padding: 20px;
 	font-size: 20px;
 	font-weight: 600;
 }
+h2 {
+	display: flex;
+	justify-content: center;
+}
 p {
 	text-align: center;
 	display: flex;
-	width: 50%;
-	background-color: pink;
+	background-color: #eac9aa;
 	justify-content: center;
 }
 a { 
@@ -48,7 +56,18 @@ a {
 	text-decoration: none;
 } 
 a:hover {
-	color: yellow;
+	color: #82a18f;
+}
+/*.pretty {
+	display: flex;
+	background: red;
+	border: 1px solid blue;
+	justify-content: space-around;
+	align-items: center;
+}*/
+
+footer {
+	position: fixed;
 }
 
 /* This will serve as the area for my mobile breakpoints */
@@ -56,10 +75,13 @@ a:hover {
     h1 {
         font-size: 14px;
     }
+    h2 {
+    	font-size: 12px;
+    }
     .container > li {
     	font-size: 12px;
     }
 	p {
-		font-size: 11px;
+		font-size: 10px;
 	} 
 }
