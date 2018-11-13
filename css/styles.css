@@ -1,14 +1,32 @@
-/* This will serve as the area for my main brand styles that I want to be. global across my site*/
+/* This will serve as the area for my main brand styles that I want to be. global across my site AKA re-used styles*/
+/*https://www.color-hex.com/color-palette/67828*/
 
 body {
  	font-family: 'Raleway', sans-serif;
 }
-
+h1	{
+	justify-content: center;
+	padding: 20px;
+	font-size: 20px;
+	font-weight: 600;
+}
+h2 {
+	display: flex;
+	justify-content: center;
+}
+.row {
+	display: flex;
+	flex-direction: row;
+}
+.column {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
 /* Nav */
 .nav-container {
 	display: flex;
-	justify-content: flex-end;
-	padding: 25px;
+	padding: 20px;
 	border-bottom: .25px solid #eac9aa;
 	background-color: #ec8e75;
 }
@@ -20,7 +38,6 @@ body {
 	padding: 10px;
 	color: #eac9aa;
 }
-
 /* Main */
 
 .main-content {
@@ -28,23 +45,6 @@ body {
 	flex-direction: column;
 /*	align-items: center;*/
 	background-color: #82a18f;
-}
-.mini-content
-{
-/*	height: 300px;*/
-	display: flex;
-	justify-content: space-around;
-}
-
-h1	{
-	justify-content: center;
-	padding: 20px;
-	font-size: 20px;
-	font-weight: 600;
-}
-h2 {
-	display: flex;
-	justify-content: center;
 }
 p {
 	text-align: center;
@@ -59,27 +59,8 @@ a {
 a:hover {
 	color: #82a18f;
 }
-/*.temp-name {
-	display: flex;
-	background: red;
-	border: 1px solid blue;
-	justify-content: space-around;
-	align-items: center;
-}*/
-
 footer {
 	position: fixed;
-}
-
-/* reused styles */
-.row {
-	display: flex;
-	flex-direction: row;
-}
-.column {
-	display: flex;
-	flex-direction: column;
-	flex: 1;
 }
 
 /* one offs */
@@ -94,6 +75,7 @@ footer {
 .short-story {
 	order:3;
 }
+
 /* This will serve as the area for my mobile breakpoints */
 @media only screen and (max-width: 600px) {
     h1 {
