@@ -9,10 +9,14 @@ h1	{
 	padding: 20px;
 	font-size: 20px;
 	font-weight: 600;
+	font-size: 35px;
 }
 h2 {
 	display: flex;
 	justify-content: center;
+	padding: 15px;
+	font-weight: 600;
+	font-size: 30px;
 }
 .row {
 	display: flex;
@@ -25,36 +29,44 @@ h2 {
 }
 /* Nav */
 .nav-container {
-	display: flex;
 	padding: 20px;
 	border-bottom: .25px solid #eac9aa;
 	background-color: #ec8e75;
+	justify-content: space-around;
+	align-items: center;
+	margin-right: 50px;
+	margin-left: 50px;
 }
 
 .nav-container > li {
-	width: 30%;
 	display: flex;
-	justify-content: space-around;
-	padding: 10px;
+	padding: 5px;
 	color: #eac9aa;
 }
 /* Main */
 
 .main-content {
-	display: flex;
+	display: flex
 	flex-direction: column;
+	margin-right: 50px;
+	margin-left: 50px;
 /*	align-items: center;*/
-	background-color: #82a18f;
+/*	background-color: #82a18f;*/
 }
 p {
+/*	margin: 20px;*/
+	padding: 5px;
 	text-align: center;
 	display: flex;
 	background-color: #eac9aa;
 	justify-content: center;
+	line-height: normal;
+	font-size: 25px;
 }
 a { 
 	color: inherit; 
 	text-decoration: none;
+	font-size: 25px;
 } 
 a:hover {
 	color: #82a18f;
@@ -62,11 +74,13 @@ a:hover {
 footer {
 	position: fixed;
 }
-
+ul {
+	font-size: 25px;
+}
 /* one offs */
 .intro-photo {
 	order:2;
-	justify-content: center;
+	justify-content: flex-start;
 	text-align: center;
 }
 .long-story {
@@ -74,6 +88,14 @@ footer {
 }
 .short-story {
 	order:3;
+}
+.short-story > ul > li {
+	line-height: normal;
+	padding: 5px;
+	margin: 5px;
+}
+#about-pic {
+	height: 600px;
 }
 
 /* This will serve as the area for my mobile breakpoints */
@@ -84,10 +106,12 @@ footer {
     h2 {
     	font-size: 12px;
     }
-    .container > li {
+    .nav-container > li {
     	font-size: 12px;
     }
 	p {
 		font-size: 10px;
+		line-height: inherit;
+		margin: 5px;
 	} 
 }
