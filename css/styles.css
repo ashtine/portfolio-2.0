@@ -18,6 +18,10 @@ h2 {
 	font-weight: 600;
 	font-size: 30px;
 }
+h3 {
+	font-size: 25px;
+	padding: 15px;
+}
 .row {
 	display: flex;
 	flex-direction: row;
@@ -26,6 +30,9 @@ h2 {
 	display: flex;
 	flex-direction: column;
 	flex: 1;
+}
+.center {
+	align-items: center;
 }
 /* Nav */
 .nav-container {
@@ -98,8 +105,11 @@ ul {
 	height: 600px;
 }
 /*collapsing work section*/
+/*.dropdown-for-work {
+	border-radius: 10px;
+}*/
 .collapsible {
-  background-color: #777;
+  background-color: #ec8e75;
   color: white;
   cursor: pointer;
   padding: 18px;
@@ -107,17 +117,16 @@ ul {
   border: none;
   text-align: left;
   outline: none;
-  font-size: 15px;
+  font-size: 20px;
 }
 .active, .collapsible:hover {
-  background-color: #555;
+  background-color: #896c68;
 }
 .content {
   padding: 0 18px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
 }
 .collapsible:after {
     content: '\02795'; /* Unicode character for "plus" sign (+) */
@@ -130,6 +139,21 @@ ul {
 .active:after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
+.icon-size {
+	font-size: 40px;
+	padding: 40px;
+}
+
+
+/*This will serves as medium/table screen breakpoints*/
+@media screen and (max-width: 992px) {
+ 
+ p {
+ 	font-size: 14px;
+ }
+
+}
+
 /* This will serve as the area for my mobile breakpoints */
 @media only screen and (max-width: 600px) {
     h1 {
@@ -137,6 +161,12 @@ ul {
     }
     h2 {
     	font-size: 12px;
+    }
+    h3 {
+    	font-size: 10px;
+    }
+    .icon-size {
+     font-size: 15px;	
     }
     .nav-container > li {
     	font-size: 12px;
@@ -146,4 +176,7 @@ ul {
 		line-height: inherit;
 		margin: 5px;
 	} 
+	mobile-view	{
+		/*need mobile styles to make everything breakdown into one column 
+	}
 }
